@@ -6,9 +6,9 @@ public class CustomAnimationTimer extends AnimationTimer
 	
 	private Consumer<Long> handleMethod = null;
 	
-	public CustomAnimationTimer(Consumer<Long> method)
+	public CustomAnimationTimer(Consumer<Long> methodReference)
 	{
-		handleMethod = method;
+		handleMethod = methodReference;
 	}
 	
 	
@@ -20,10 +20,10 @@ public class CustomAnimationTimer extends AnimationTimer
 	
 	
 	// REPLACE THE UPDATE WHEN NEEDED:
-	public void setHandle(Consumer<Long> method) 
+	public void setHandle(Consumer<Long> methodReference) 
 	{
 		handleMethod = null;
-		handleMethod = method;
+		handleMethod = methodReference;
 	}
 	
 }
